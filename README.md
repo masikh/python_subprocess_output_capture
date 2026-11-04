@@ -1,5 +1,7 @@
 # Capture output from very long running python subprocess event driven
 
+[![Language](https://img.shields.io/github/languages/top/masikh/python_subprocess_output_capture)](https://github.com/masikh/python_subprocess_output_capture) [![Last commit](https://img.shields.io/github/last-commit/masikh/python_subprocess_output_capture)](https://github.com/masikh/python_subprocess_output_capture/commits) [![Repo size](https://img.shields.io/github/repo-size/masikh/python_subprocess_output_capture)](https://github.com/masikh/python_subprocess_output_capture) [![Stars](https://img.shields.io/github/stars/masikh/python_subprocess_output_capture?style=flat)](https://github.com/masikh/python_subprocess_output_capture/stargazers)
+
 #### The problem
 The problem I am facing is that I have a subprocess in python (ffmpeg process) that runs for hours or even days from which I'd like to capture the output. The subprocess its stdout/err.PIPE can easily grow huge and needs to be flushed otherwise the program will grow out of memory (limit of PIPE size). I do not like to constantly parse the output but ondemand (event driven) and very important, get the latest output from the sub-process.
 
